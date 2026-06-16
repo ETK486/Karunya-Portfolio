@@ -1,0 +1,209 @@
+/* ════════════════════════════════════
+   SECTION 1 — HERO
+   ════════════════════════════════════ */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 64px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 0.7fr;
+  gap: 60px;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-label {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 64px;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+  margin-bottom: 28px;
+}
+
+.hero-subtext {
+  font-size: 18px;
+  color: var(--text-secondary);
+  max-width: 420px;
+  margin-bottom: 36px;
+  line-height: 1.7;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn-filled {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--white);
+  padding: 14px 28px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.btn-filled:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.btn-outlined {
+  display: inline-block;
+  background: transparent;
+  color: var(--text-primary);
+  padding: 14px 28px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid var(--text-primary);
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.btn-outlined:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* Hero right — abstract composition */
+.hero-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+
+.abstract-composition {
+  position: relative;
+  width: 320px;
+  height: 320px;
+}
+
+.abstract-rect-1 {
+  position: absolute;
+  width: 200px;
+  height: 260px;
+  background: var(--accent);
+  top: 20px;
+  left: 60px;
+  transform: rotate(-6deg);
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.abstract-rect-2 {
+  position: absolute;
+  width: 180px;
+  height: 220px;
+  background: var(--accent-light);
+  top: 40px;
+  left: 90px;
+  transform: rotate(4deg);
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.abstract-rect-3 {
+  position: absolute;
+  width: 160px;
+  height: 200px;
+  background: var(--surface);
+  top: 60px;
+  left: 80px;
+  transform: rotate(-2deg);
+  border: 1px solid var(--border);
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Parallax-ready transforms — applied via JS */
+.abstract-composition.parallax .abstract-rect-1 {
+  transform: rotate(-6deg) translateY(var(--parallax-y, 0px));
+}
+.abstract-composition.parallax .abstract-rect-2 {
+  transform: rotate(4deg) translateY(calc(var(--parallax-y, 0px) * 0.6));
+}
+.abstract-composition.parallax .abstract-rect-3 {
+  transform: rotate(-2deg) translateY(calc(var(--parallax-y, 0px) * 0.3));
+}
+
+.stat-strip {
+  display: flex;
+  gap: 36px;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  font-family: 'Fraunces', serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--accent);
+  line-height: 1.2;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-top: 4px;
+}
+
+/* Scroll indicator */
+.scroll-indicator {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-secondary);
+  font-size: 12px;
+  animation: bounce 2s infinite;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.scroll-indicator:hover {
+  opacity: 0.6;
+}
+
+.scroll-arrow {
+  width: 20px;
+  height: 20px;
+  border-right: 2px solid var(--text-secondary);
+  border-bottom: 2px solid var(--text-secondary);
+  transform: rotate(45deg);
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  40% {
+    transform: translateX(-50%) translateY(8px);
+  }
+  60% {
+    transform: translateX(-50%) translateY(4px);
+  }
+}

@@ -1,0 +1,142 @@
+/* ════════════════════════════════════
+   SECTION 4 — ABOUT
+   ════════════════════════════════════ */
+.about-section {
+  padding: 100px 0;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 0.4fr 0.6fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.about-visual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.about-shapes {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: var(--surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-circle-1 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: var(--accent);
+  top: 30%;
+  left: 20%;
+  transition: transform 0.6s ease;
+}
+
+.about-circle-2 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: var(--accent-light);
+  top: 45%;
+  left: 50%;
+  transition: transform 0.6s ease;
+}
+
+.about-rect-1 {
+  position: absolute;
+  width: 120px;
+  height: 80px;
+  background: var(--accent-light);
+  top: 25%;
+  right: 15%;
+  transform: rotate(8deg);
+  transition: transform 0.6s ease;
+}
+
+.about-rect-2 {
+  position: absolute;
+  width: 80px;
+  height: 60px;
+  background: var(--accent);
+  bottom: 20%;
+  left: 30%;
+  transform: rotate(-5deg);
+  opacity: 0.6;
+  transition: transform 0.6s ease;
+}
+
+/* Subtle hover movement on about shapes */
+.about-shapes:hover .about-circle-1 {
+  transform: translate(-4px, -4px);
+}
+.about-shapes:hover .about-circle-2 {
+  transform: translate(6px, -2px);
+}
+.about-shapes:hover .about-rect-1 {
+  transform: rotate(12deg) translate(4px, -4px);
+}
+.about-shapes:hover .about-rect-2 {
+  transform: rotate(-8deg) translate(-4px, 4px);
+}
+
+.about-location {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.about-heading {
+  font-size: 40px;
+  letter-spacing: -0.02em;
+  margin-bottom: 28px;
+}
+
+.about-text p {
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.about-divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 36px 0;
+}
+
+.tools-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+}
+
+.tool-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tool-badge {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  padding: 8px 14px;
+  font-size: 12px;
+  font-family: 'Inter', sans-serif;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.tool-badge:hover {
+  border-color: var(--accent);
+  color: var(--text-primary);
+}

@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karunya Devaki — UX/UI Designer</title>
+  <meta name="description"
+    content="Portfolio of Karunya Devaki, a UX/UI designer from Bangalore with a background in Data Science. Specializing in research-driven interfaces for EdTech, Robotics, Luxury Retail, and Industrial B2B." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;500&display=swap"
+    rel="stylesheet" />
+
+  <!-- Modular CSS -->
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/work.css" />
+  <link rel="stylesheet" href="css/process.css" />
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress"></div>
+
+  <!-- ════════════════════════════════════
+       NAVIGATION
+       ════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+      <a href="#" class="nav-logo">Karunya Devaki</a>
+      <ul class="nav-links" id="navLinks">
+        <li class="nav-dropdown">
+          <a href="#work" data-section="work">Work</a>
+          <div class="dropdown-menu">
+            <a href="#case-fahm">Fahm</a>
+            <a href="#case-mowito">Mowito</a>
+            <a href="#case-premier">World of Premier</a>
+            <a href="#case-anaya">Anaya Steel</a>
+          </div>
+        </li>
+        <li><a href="#process" data-section="process">Process</a></li>
+        <li><a href="#about" data-section="about">About</a></li>
+        <li><a href="#contact" data-section="contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Overlay -->
+  <div class="mobile-overlay" id="mobileOverlay">
+    <a href="#work" class="mobile-nav-link">Work</a>
+    <div class="mobile-sub-links">
+      <a href="#case-fahm" class="mobile-nav-link mobile-sub-link">— Fahm</a>
+      <a href="#case-mowito" class="mobile-nav-link mobile-sub-link">— Mowito</a>
+      <a href="#case-premier" class="mobile-nav-link mobile-sub-link">— World of Premier</a>
+      <a href="#case-anaya" class="mobile-nav-link mobile-sub-link">— Anaya Steel</a>
+    </div>
+    <a href="#process" class="mobile-nav-link">Process</a>
+    <a href="#about" class="mobile-nav-link">About</a>
+    <a href="#contact" class="mobile-nav-link">Contact</a>
+  </div>
+
+  <!-- ════════════════════════════════════
+       SECTION 1 — HERO
+       ════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="container" style="position: relative;">
+      <div class="hero-grid animate-section">
+        <div class="hero-left">
+          <p class="hero-label">UX Designer &amp; Researcher</p>
+          <h1>Designing with<br>curiosity.<br>Building with<br>empathy.</h1>
+          <p class="hero-subtext">I'm Karunya — a UX/UI designer from Bangalore with a background in Data Science. I
+            turn research and real user needs into interfaces that actually make sense to use.</p>
+          <div class="hero-buttons">
+            <a href="#work" class="btn-filled">View My Work</a>
+            <a href="#" class="btn-outlined">Download Resume</a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="abstract-composition">
+            <img src="./resources/KD.jpg" alt="Karunya Devaki" />
+          </div>
+          <div class="stat-strip">
+            <div class="stat-item">
+              <div class="stat-number">1+ yrs</div>
+              <div class="stat-label">Professional Experience</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">8+</div>
+              <div class="stat-label">Live Client Projects</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">2</div>
+              <div class="stat-label">Countries of Design Influence</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#work" class="scroll-indicator" aria-label="Scroll to work section">
+        <div class="scroll-arrow"></div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       SECTION 2 — FEATURED WORK
+       ════════════════════════════════════ -->
+  <section class="work-section" id="work">
+    <div class="container animate-section">
+      <p class="section-label">Selected Work</p>
+      <h2 class="section-heading">Projects that<br>went live.</h2>
+
+      <!-- CARD 1 — FAHM -->
+      <div class="case-card animate-section stagger-1" data-href="#case-fahm" role="link" tabindex="0">
+        <div class="case-card-image">
+          <span>[Project Screenshot — replace with actual]</span>
+        </div>
+        <div class="case-card-text">
+          <div class="card-tag">EdTech Platform</div>
+          <h3>Fahm</h3>
+          <p class="card-role">UX Research · UI Design · Webflow</p>
+          <p class="card-description">Fahm is an online learning platform built for Arabic language education. The
+            challenge was designing a bilingual experience that felt natural for both Arabic and English speakers —
+            balancing RTL/LTR layout switching, accessibility, and a visual identity that respected cultural context
+            without falling into stereotypes.</p>
+          <div class="outcome-pills">
+            <span class="outcome-pill">Bilingual UI</span>
+            <span class="outcome-pill">RTL/LTR Support</span>
+            <span class="outcome-pill">Live at fahm.co.in</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2 — MOWITO -->
+      <div class="case-card animate-section stagger-2" data-href="#case-mowito" role="link" tabindex="0">
+        <div class="case-card-image">
+          <span>[Project Screenshot — replace with actual]</span>
+        </div>
+        <div class="case-card-text">
+          <div class="card-tag">Robotics Tech</div>
+          <h3>Mowito</h3>
+          <p class="card-role">UX Strategy · Web Design · Brand Communication</p>
+          <p class="card-description">Mowito builds autonomous navigation software for robots. The design challenge here
+            was making highly technical robotics capabilities feel approachable and credible to enterprise buyers —
+            translating complex specs into a clean, trustworthy web presence that communicates innovation without
+            alienating non-technical stakeholders.</p>
+          <div class="outcome-pills">
+            <span class="outcome-pill">B2B UX</span>
+            <span class="outcome-pill">Technical Storytelling</span>
+            <span class="outcome-pill">Live at mowito.ai</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3 — WORLD OF PREMIER -->
+      <div class="case-card animate-section stagger-3" data-href="#case-premier" role="link" tabindex="0">
+        <div class="case-card-image">
+          <span>[Project Screenshot — replace with actual]</span>
+        </div>
+        <div class="case-card-text">
+          <div class="card-tag">Luxury Retail</div>
+          <h3>World of Premier</h3>
+          <p class="card-role">UI Design · Visual Hierarchy · Webflow</p>
+          <p class="card-description">A luxury lifestyle retail platform requiring a delicate balance between
+            aspirational aesthetics and clear product discovery. The design focused on building trust through visual
+            refinement — careful typography choices, editorial-style layouts, and a browsing experience that lets the
+            products breathe without feeling cold or inaccessible.</p>
+          <div class="outcome-pills">
+            <span class="outcome-pill">Luxury UX</span>
+            <span class="outcome-pill">E-commerce UI</span>
+            <span class="outcome-pill">Live at worldofpremier.com</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 4 — ANAYA STEEL -->
+      <div class="case-card animate-section stagger-4" data-href="#case-anaya" role="link" tabindex="0">
+        <div class="case-card-image">
+          <span>[Project Screenshot — replace with actual]</span>
+        </div>
+        <div class="case-card-text">
+          <div class="card-tag">Industrial B2B</div>
+          <h3>Anaya Steel</h3>
+          <p class="card-role">UX Research · Web Design · Webflow</p>
+          <p class="card-description">Designing for an industrial steel manufacturer meant solving a very unsexy but
+            important problem — making product catalogs, certifications, and inquiry flows actually usable for
+            procurement managers who have no patience for poor information architecture. This project sharpened my
+            understanding of utility-first design: when the user's job is urgent, clarity is the only aesthetic that
+            matters.</p>
+          <div class="outcome-pills">
+            <span class="outcome-pill">B2B IA</span>
+            <span class="outcome-pill">Procurement UX</span>
+            <span class="outcome-pill">Live at anayasteel.com</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       SECTION 3 — CASE STUDY DEEP DIVES
+       ════════════════════════════════════ -->
+  <section class="process-section" id="process">
+    <div class="container">
+      <div class="animate-section">
+        <p class="section-label">Process</p>
+        <h2 class="section-heading">How I think<br>through problems.</h2>
+        <p class="process-intro">Good design isn't about how it looks at the end — it's about the questions asked at the
+          beginning. Here's what my process actually looks like, from the first conversation to the final handoff.</p>
+      </div>
+
+      <!-- ═══════════════════════════════════════════════
+           CASE STUDY 1 — FAHM
+           ═══════════════════════════════════════════════ -->
+      <div class="case-study animate-section" id="case-fahm">
+        <h2 class="case-study-title">Fahm — Designing for Bilingual Learners</h2>
+        <div class="overview-strip">
+          <div>
+            <div class="overview-item-label">Duration</div>
+            <div class="overview-item-value">3 months</div>
+          </div>
+          <div>
+            <div class="overview-item-label">Role</div>
+            <div class="overview-item-value">UX Research, UI Design, Webflow</div>
+          </div>
+          <div>
+            <div class="overview-item-label">Client</div>
+            <div class="overview-item-value">Alchemy Technologies × Fahm</div>
+          </div>
+        </div>
+
+        <!-- UX Competency Tags -->
+        <div class="competency-strip">
+          <span class="competency-strip-label">UX Competencies Demonstrated</span>
+          <span class="competency-tag"><span class="tag-dot"></span>User Research</span>
+          <span class="competency-tag"><span class="tag-dot"></span>Wireframes</span>
+          <span class="competency-tag"><span class="tag-dot"></span>Interaction Thinking</span>
+          <span class="competency-tag"><span class="tag-dot"></span>Problem Solving</span>
+          <span class="competency-tag"><span class="tag-dot"></span>Prototyping</span>
+          <span class="competency-tag"><span class="tag-dot"></span>Accessibility / Usability</span>
+          <span class="competency-tag"><span class="tag-dot"></span>Design Systems</span>
+          <span class="competency-tag"><span class="tag-dot"></span>Motion / Micro-interactions</span>
+        </div>
+
+        <!-- 01 — The Problem -->
+        <div class="cs-block">
+          <p class="cs-label">01 — The Problem</p>
+          <h3 class="cs-heading">Two languages. Two reading directions. One coherent experience.</h3>
+          <p class="cs-body">Arabic is written right-to-left. English is left-to-right. Most bilingual platforms pick
+            one direction and force the other language to awkwardly adapt. For an educational platform where language
+            itself is the product, this wasn't acceptable. Users needed to feel like both languages were first-class
+            citizens of the same design system.</p>
+        </div>
+
+        <!-- 02 — Research & Discovery -->
+        <div class="cs-block">
+          <p class="cs-label">02 — Research &amp; Discovery</p>
+          <h3 class="cs-heading">Understanding how bilingual users actually switch between languages</h3>
+          <p class="cs-body">The research phase began with five user interviews across two user groups — Arabic native
+            speakers learning in English, and English speakers studying Arabic. Key insight: users didn't switch
+            languages arbitrarily. They switched based on context — explanations in their native language, exercises in
+            the target language. This behavioral pattern became the anchor for the entire IA.</p>
+
+          <div class="insight-quote">'When I'm reading instructions, I need them in Arabic — but when I'm actually doing
+            the exercise, I want full English immersion.' — Research participant</div>
+
+          <p class="cs-body">Journey mapping revealed three pain points in competing platforms:</p>
+          <div class="cs-body">
+            <ol>
+              <li>Inconsistent font rendering between scripts made pages feel broken</li>
+              <li>UI elements like arrows and progress indicators assumed LTR direction</li>
+              <li>Error messages defaulted to English even when the session was in Arabic</li>
+            </ol>
+          </div>
+
+          <div class="methods-list">
+            <div class="method-item"><span class="method-marker"></span>Semi-structured user interviews (5 participants)
+            </div>
+            <div class="method-item"><span class="method-marker"></span>Journey mapping across competing platforms</div>
+            <div class="method-item"><span class="method-marker"></span>Contextual inquiry — observing language
+              switching behavior</div>
+            <div class="method-item"><span class="method-marker"></span>Affinity diagramming for pain point clustering
+            </div>
+          </div>
+        </div>
+
+        <!-- 03 — Design Decisions -->
+        <div class="cs-block">
+          <p class="cs-label">03 — Design Decisions</p>
+          <h3 class="cs-heading">Building a direction-aware design system</h3>
+          <p class="cs-body">Rather than designing two separate UIs, the solution was a single component library that
+            responded to the active language context. Every directional element — chevrons, progress bars, navigation
+            flows — was built to flip. Typography was handled by pairing a high-legibility Arabic typeface with Inter,
+            ensuring visual harmony across both scripts at every font size.</p>
+          <p class="cs-body">Color and iconography were kept culturally neutral — warm without orientalist clichés,
+            modern without feeling imported.</p>
+
+          <div class="wireframe-placeholder" style="height: 280px;">
+            <span>[Wireframe screens — replace with actual Figma exports]</span>
+          </div>
+        </div>
+
+        <!-- 04 — Wireframes & Prototyping -->
+        <div class="cs-block">
+          <p class="cs-label">04 — Wireframes &amp; Prototyping</p>
+          <h3 class="cs-heading">From paper sketches to direction-aware interactive prototypes</h3>
+          <p class="cs-body">The wireframing process started with low-fidelity paper sketches that mapped out the core
+            learning flows — lesson browsing, exercise interaction, and progress tracking — for both reading directions
+            simultaneously. Each sketch was drawn twice: once in an LTR configuration and once mirrored for RTL. This
+            was deliberately tedious, but it immediately revealed assumptions baked into my own design instincts —
+            things like icon placement, swipe direction for carousels, and where the eye naturally gravitates for
+            navigation cues.</p>
+          <p class="cs-body">Mid-fidelity wireframes were built in Figma using an auto-layout-first approach,
+            specifically so that direction flipping could be tested structurally before any visual design decisions were
+            made. Every component was prototyped with two variants — not just mirrored visually, but reconsidered for
+            cognitive flow. A progress bar that fills left-to-right in English doesn't just flip; the entire mental
+            model of 'progress' shifts. The prototype tested whether users intuitively understood progress indicators in
+            both directions, and the results led to using a radial progress indicator instead — which is
+            direction-neutral by nature.</p>
+          <p class="cs-body">High-fidelity prototypes were built in Figma with interactive language switching. Users
+            could toggle between Arabic and English within the same session, and the prototype responded with full
+            layout flipping, font switching, and re-anchored navigation. Three rounds of prototype testing with four
+            users each refined the timing of the transition animation — too fast felt jarring, too slow felt broken. The
+            final 300ms crossfade with a subtle scale was the version users described as 'it just works.'</p>
+
+          <div class="wireframe-placeholder" style="height: 260px;">
+            <span>[Low-fi → Mid-fi → Hi-fi prototype progression — replace with actual]</span>
+          </div>
+        </div>
+
+        <!-- 05 — Accessibility, Usability & Interaction Details -->
+        <div class="cs-block">
+          <p class="cs-label">05 — Accessibility, Usability &amp; Interaction Details</p>
+          <h3 class="cs-heading">Making bilingual design work for every user, not just the ideal user</h3>
+          <p class="cs-body">Accessibility in a bilingual context has layers that go beyond standard WCAG compliance.
+            Arabic and English have fundamentally different character heights, stroke weights, and baseline behaviors.
+            What meets contrast requirements in Inter at 14px may fail when the same logical size renders in an Arabic
+            typeface with thinner strokes. I tested every text style at both its English and Arabic rendering, adjusting
+            font sizes independently to achieve equivalent optical legibility — not just equal pixel dimensions.</p>
+          <p class="cs-body">Keyboard navigation was rebuilt to be direction-aware. Tab order in an LTR layout moves
+            left-to-right, top-to-bottom. In RTL, it flips to right-to-left, top-to-bottom. Most component libraries
+            ignore this, which means screen reader users navigating an Arabic interface encounter a tab sequence that
+            contradicts their reading direction. I implemented logical focus order using CSS logical properties and
+            tested with VoiceOver in both language modes. Error states and validation messages were localized not just
+            in language, but in position — appearing on the right side in LTR and the left in RTL, aligned with where
+            the user's attention naturally rests after completing a form field.</p>
+          <p class="cs-body">Micro-interactions were designed to be culturally and directionally neutral. The language
+            switch itself was the most critical interaction — I prototyped five different transition approaches. A hard
+            cut felt disorienting. A slide transition implied one language was 'behind' the other. The final solution
+            used a brief opacity fade combined with a subtle 2% scale-down and scale-up, which communicated change
+            without hierarchy. Loading states used a pulsing dot animation rather than a spinning circle, avoiding the
+            directional ambiguity of clockwise vs. counterclockwise rotation in different cultural reading contexts.</p>
+
+          <div class="key-takeaway">
+            <p class="key-takeaway-label">Key Takeaway</p>
+            <p>Accessibility isn't a checklist you apply after visual design — it's an architectural decision that
+              shapes how components are built. In bilingual systems, accessibility is inextricable from interaction
+              design.</p>
+          </div>
+        </div>
+
+        <!-- 06 — Outcome -->
+        <div class="cs-block">
+          <p class="cs-label">06 — Outcome</p>
+          <h3 class="cs-heading">A platform both user groups actually want to use</h3>
+          <p class="cs-body">The delivered design system included 40+ components with direction variants, a documented
+            bilingual type scale, and Webflow implementation with dynamic RTL switching. The client team was able to
+            extend the design independently post-handoff — which is the real measure of a good design system.</p>
+        </div>
+      </div>
+
+      <!-- ═══════════════════════════════════════════════
+           CASE STUDY 2 — MOWITO
+           ═══════════════════════════════════════════════ -->
+      <div class="case-study animate-section" id="case-mowito">
+        <h2 class="case-study-title">Mowito — Making Robotics Feel Human</h2>
+        <div class="overview-strip">
+          <div>
+            <div class="overview-item-label">Duration</div>
+            <div class="overview-item-value">2 months</div>
+          </div>
+          <div>
+            <div class="overview-item-label">Role</div>
+            <div class="overview-item-value">UX Strategy, Web Design, Brand Communication</div>
+          </div>
+          <div>
+            <div class="overview-item-label">Client</div>
+            <div class="overview-item-value">Alchemy Technologies × Mowito</div>
+          </div>
+        </div>
+
+        <!-- UX Competency Tags -->
+        <div class="competency-strip">
+          <span class="competency-strip-label">UX Competencies Demonstrated</span>
+          <span class="competency-tag"><span class="tag-dot"></span>User Research</span>
+          <span class="competency-tag"><span class="tag-dot"></span>Wireframes</span>
+          <span class="competency-tag"><span class="tag-dot"></span>Interaction Thinking</span>
+          <span class="competency-tag"><span class="tag-dot"></span>Problem Solving</span>
+          <span class="competency-tag"><span class="tag-dot"></span>Prototyping</span>
+          <span class="competency-tag"><span class="tag-dot"></span>Accessibility / Usability</span>
+          <span class="competency-tag"><span class="tag-dot"></span>Motion / Micro-interactions</span>
+        </div>
+
+        <!-- 01 — The Problem -->
+        <div class="cs-block">
+          <p class="cs-label">01 — The Problem</p>
+          <h3 class="cs-heading">When your product is brilliant but your website speaks only to engineers</h3>
+          <p class="cs-body">Mowito's autonomous navigation software was technically impressive — but the existing
+            communication assumed the reader already understood ROS, SLAM, and LiDAR mapping. Enterprise buyers making
+            procurement decisions aren't always engineers. The site needed to speak two languages simultaneously:
+            credible enough for CTOs, accessible enough for operations managers and procurement heads.</p>
+        </div>
+
+        <!-- 02 — Research & Discovery -->
+        <div class="cs-block">
+          <p class="cs-label">02 — Research &amp; Discovery</p>
+          <h3 class="cs-heading">Mapping the decision-making journey of an enterprise buyer</h3>
+          <p class="cs-body">Secondary research focused on understanding how B2B tech procurement decisions actually get
+            made. Key finding: the person who finds the website is rarely the person who signs the contract. A chain of
+            3–4 stakeholders evaluates different aspects — technical specs, company credibility, ease of integration,
+            support availability.</p>
+          <p class="cs-body">This meant the site needed distinct content layers — surface-level trust signals for
+            decision-makers, deep-dive technical content for evaluators — all accessible within two clicks of landing.
+          </p>
+
+          <div class="methods-list">
+            <div class="method-item"><span class="method-marker"></span>Secondary research on B2B procurement behavior
+            </div>
+            <div class="method-item"><span class="method-marker"></span>Stakeholder interviews (3 internal team members)
+            </div>
+            <div class="method-item"><span class="method-marker"></span>Competitive analysis of 6 robotics company sites
+            </div>
+            <div class="method-item"><span class="method-marker"></span>Content audit of existing technical
+              documentation</div>
+          </div>
+        </div>
+
+        <!-- 03 — Design Decisions -->
+        <div class="cs-block">
+          <p class="cs-label">03 — Design Decisions</p>
+          <h3 class="cs-heading">Hierarchy as the core UX tool</h3>
+          <p class="cs-body">The information architecture was rebuilt around the buyer's journey rather than Mowito's
+            internal product structure. Above the fold: what the software does in plain language + a concrete outcome
+            metric. Mid-page: use case scenarios showing the software in recognizable contexts (warehouse logistics,
+            hospital corridors, last-mile delivery). Deep-page: technical documentation, API references, integration
+            specs.</p>
+          <p class="cs-body">Visual design leaned into restraint — a dark, precise aesthetic that signaled engineering
+            rigor without feeling cold. White space was used aggressively to make technical content readable.</p>
+
+          <div class="wireframe-placeholder" style="height: 260px;">
+            <span>[Site architecture diagram + wireframe screens — replace with actual]</span>
+          </div>
+        </div>
+
+        <!-- 04 — Wireframes & Prototyping -->
+        <div class="cs-block">
+          <p class="cs-label">04 — Wireframes &amp; Prototyping</p>
+          <h3 class="cs-heading">Validating information architecture before committing a single pixel</h3>
+          <p class="cs-body">The wireframing phase for Mowito was fundamentally an IA validation exercise. Before any
+            layout or visual work began, I created content-first wireframes — grey-box layouts where the hierarchy of
+            information was the only design variable. Each section was structured as a question the buyer might ask:
+            'What does this software actually do?', 'Where is it already working?', 'How would it integrate into our
+            existing systems?', 'Who are these people and can we trust them?' The wireframes were organized around
+            answering these questions in the sequence that B2B procurement research suggested they arise.</p>
+          <p class="cs-body">Prototyping focused on navigation paths. I built click-through prototypes in Figma that
+            simulated three distinct user journeys: a CTO scanning for technical credibility, an operations manager
+            evaluating practical use cases, and a procurement officer looking for pricing and support information. Each
+            prototype was tested internally with Mowito's team members role-playing these personas. The results exposed
+            a critical problem in my initial IA — technical documentation was buried three levels deep, which worked for
+            the operations manager journey but frustrated the CTO journey. The solution was introducing a persistent
+            sidebar navigation on deep-content pages that surfaced technical specs at every level.</p>
+          <p class="cs-body">The prototyping also revealed that video demonstrations were the single most effective
+            content type across all three personas. I restructured the page layout to position video embeds as primary
+            content elements rather than supplementary media, and prototyped an interaction where hovering on a use case
+            card triggered a short autoplay preview — bridging the gap between text-based claims and visual evidence.
+            This interaction survived into the final build.</p>
+
+          <div class="wireframe-placeholder" style="height: 260px;">
+            <span>[IA tree → wireframe comparison → click-through paths — replace with actual]</span>
+          </div>
+        </div>
+
+        <!-- 05 — Accessibility, Usability & Interaction Details -->
+        <div class="cs-block">
+          <p class="cs-label">05 — Accessibility, Usability &amp; Interaction Details</p>
+          <h3 class="cs-heading">Technical content doesn't excuse poor usability</h3>
+          <p class="cs-body">Mowito's site presented an unusual usability challenge: the content ranged from
+            plain-language marketing copy to dense technical specifications with embedded code snippets and API
+            references. Ensuring readability across this spectrum required a carefully designed typographic system with
+            distinct reading modes. Marketing sections used generous line-height (1.8), shorter line lengths (65
+            characters max), and larger body text. Technical sections used a monospace-adjacent type treatment with
+            increased letter-spacing, syntax-highlighted code blocks, and expandable specification tables that defaulted
+            to a summary view.</p>
+          <p class="cs-body">Accessibility considerations extended to the dark visual aesthetic. Dark themes create
+            specific contrast challenges — body text on dark backgrounds requires higher contrast ratios than light
+            themes to achieve equivalent legibility, especially on lower-quality displays. I tested all text elements
+            against WCAG AA standards at multiple brightness levels, and adjusted the background palette from pure dark
+            (#0A0A0A) to a calibrated dark (#121218) that maintained the engineering aesthetic while improving text
+            rendering. Interactive elements were given visible focus states using a subtle accent-colored outline that
+            didn't disrupt the visual design — critical for keyboard navigation by accessibility-conscious enterprise
+            users.</p>
+          <p class="cs-body">Motion design on the site was used sparingly but with deliberate communicative intent.
+            Scroll-triggered animations on the homepage revealed content in a rhythm that matched the narrative
+            structure — each section appeared as the user naturally needed it, creating a sense of guided discovery
+            rather than overwhelming information density. The use case card hover interaction I prototyped — a subtle
+            scale-up with autoplay video — was refined to include a loading state for slower connections and a fallback
+            static image for users with reduced-motion preferences. The scroll-to-section navigation used a smooth 600ms
+            easing curve that communicated physical weight and precision, reinforcing the engineering brand identity
+            through interaction rhythm.</p>
+
+          <div class="key-takeaway">
+            <p class="key-takeaway-label">Key Takeaway</p>
+            <p>B2B usability isn't about making things 'simple' — it's about matching the complexity of the content to
+              the expertise of the reader at each specific point in their journey.</p>
+          </div>
+        </div>
+
+        <!-- 06 — Outcome -->
+        <div class="cs-block">
+          <p class="cs-label">06 — Outcome</p>
+          <h3 class="cs-heading">A site that works for the CTO and the CFO</h3>
+          <p class="cs-body">Post-launch, the client reported improved time-on-page and meaningful inquiry quality
+            improvement — buyers were arriving on calls already understanding Mowito's core value proposition. The
+            redesign also gave the internal team a content framework they could extend as the product line grew.</p>
+        </div>
+      </div>
+
+      <!-- ═══════════════════════════════════════════════
+           CASE STUDY 3 — WORLD OF PREMIER
+           ═══════════════════════════════════════════════ -->
+      <div class="case-study animate-section" id="case-premier">
+        <h2 class="case-study-title">World of Premier — Editorial E-commerce</h2>
+        <div class="overview-strip">
+          <div>
+            <div class="overview-item-label">Duration</div>
+            <div class="overview-item-value">2 months</div>
+          </div>
+          <div>
+            <div class="overview-item-label">Role</div>
+            <div class="overview-item-value">UI Design, Visual Hierarchy, Webflow</div>
+          </div>
+          <div>
+            <div class="overview-item-label">Client</div>
+            <div class="overview-item-value">Alchemy Technologies × World of Premier</div>
+          </div>
+        </div>
+
+        <!-- UX Competency Tags -->
+        <div class="competency-strip">
+          <span class="competency-strip-label">UX Competencies Demonstrated</span>
+          <span class="competency-tag"><span class="tag-dot"></span>User Research</span>
+          <span class="competency-tag"><span class="tag-dot"></span>Wireframes</span>
+          <span class="competency-tag"><span class="tag-dot"></span>Interaction Thinking</span>
+          <span class="competency-tag"><span class="tag-dot"></span>Problem Solving</span>
+          <span class="competency-tag"><span class="tag-dot"></span>Prototyping</span>
+          <span class="competency-tag"><span class="tag-dot"></span>Accessibility / Usability</span>
+          <span class="competency-tag"><span class="tag-dot"></span>Design Systems</span>
+          <span class="competency-tag"><span class="tag-dot"></span>Motion / Micro-interactions</span>
+        </div>
+
+        <!-- 01 — The Problem -->
+        <div class="cs-block">
+          <p class="cs-label">01 — The Problem</p>
+          <h3 class="cs-heading">Luxury products deserve a browsing experience that matches their value</h3>
+          <p class="cs-body">The existing platform felt generic — a standard e-commerce template that could have been
+            selling anything. For a luxury lifestyle brand, the gap between product quality and digital presentation was
+            creating a silent credibility problem. High-end buyers make purchase decisions partly on how a brand
+            presents itself. The design needed to close that gap.</p>
+        </div>
+
+        <!-- 02 — Research & Discovery -->
+        <div class="cs-block">
+          <p class="cs-label">02 — Research &amp; Discovery</p>
+          <h3 class="cs-heading">What luxury browsing actually feels like</h3>
+          <p class="cs-body">Competitive analysis across luxury retail platforms (both Indian and international)
+            revealed a consistent pattern: the best luxury UX is characterized by restraint, not decoration. Whitespace,
+            editorial photography treatment, and typographic confidence communicate quality more effectively than visual
+            complexity.</p>
+          <p class="cs-body">User feedback from existing customers indicated two primary friction points: product
+            discovery across categories felt random, and the checkout flow lost the elevated feeling established by the
+            homepage.</p>
+
+          <div class="methods-list">
+            <div class="method-item"><span class="method-marker"></span>Competitive analysis across 8 luxury retail
+              platforms</div>
+            <div class="method-item"><span class="method-marker"></span>Customer feedback analysis from existing user
+              base</div>
+            <div class="method-item"><span class="method-marker"></span>Visual benchmarking of editorial design patterns
+            </div>
+            <div class="method-item"><span class="method-marker"></span>Category card sorting with 3 user participants
+            </div>
+          </div>
+        </div>
+
+        <!-- 03 — Design Decisions -->
+        <div class="cs-block">
+          <p class="cs-label">03 — Design Decisions</p>
+          <h3 class="cs-heading">Typography and whitespace as the primary design materials</h3>
+          <p class="cs-body">The redesign was built on three principles:</p>
+          <div class="cs-body">
+            <ol>
+              <li>Every product deserved room to exist — generous padding, no cramped grids</li>
+              <li>Typography carried the brand voice — a serif display font for editorial moments, a clean sans-serif
+                for product information</li>
+              <li>The interface stepped back whenever the product stepped forward — neutral backgrounds, minimal chrome,
+                focus on product imagery</li>
+            </ol>
+          </div>
+          <p class="cs-body">Category architecture was reorganized around lifestyle occasions rather than product types
+            — shifting the browsing mental model from 'what is this product' to 'what is this product for'.</p>
+
+          <div class="wireframe-placeholder" style="height: 260px;">
+            <span>[Before/after screens + component designs — replace with actual]</span>
+          </div>
+        </div>
+
+        <!-- 04 — Wireframes & Prototyping -->
+        <div class="cs-block">
+          <p class="cs-label">04 — Wireframes &amp; Prototyping</p>
+          <h3 class="cs-heading">Designing for feeling, not just function</h3>
+          <p class="cs-body">Wireframing for luxury e-commerce is a paradox — the wireframe stage strips away the very
+            thing that makes luxury design work: refined visual treatment. To address this, I used a 'weighted
+            wireframe' approach where spacing, proportion, and rhythm were the primary design elements even at the
+            grey-box stage. Where a standard wireframe might use equal gutters between product cards, the luxury
+            wireframes used deliberately unequal spacing that created visual breathing room — the same spatial rhythm
+            that gallery exhibitions use to give each artwork its own presence.</p>
+          <p class="cs-body">Category restructuring was prototyped iteratively. The original product architecture
+            organized items by type — watches, accessories, fragrances. The new architecture organized them by occasion
+            — 'Evening', 'Travel', 'Gifting', 'Everyday'. I built two parallel prototypes presenting the same product
+            catalog through both organizing principles and tested them with three existing customers. The occasion-based
+            structure consistently outperformed on time-to-desired-product, but more importantly, users described the
+            browsing experience as 'enjoyable' and 'like window shopping' rather than 'efficient' — which, for luxury
+            retail, is exactly the right metric.</p>
+          <p class="cs-body">The checkout flow was prototyped separately from the browsing experience. User feedback had
+            identified a jarring tonal shift between the editorial homepage and the utilitarian checkout. The prototype
+            maintained the brand's visual language through the entire purchase journey — the same typography, the same
+            generous whitespace, the same editorial image treatment — while ensuring that functional clarity (pricing,
+            shipping options, payment) was never compromised. Each checkout step was reduced to a single-action screen,
+            trading technical efficiency for a sense of considered pace that matched the luxury browsing experience.</p>
+
+          <div class="wireframe-placeholder" style="height: 260px;">
+            <span>[Weighted wireframes + category A/B prototype + checkout flow — replace with actual]</span>
+          </div>
+        </div>
+
+        <!-- 05 — Accessibility, Usability & Interaction Details -->
+        <div class="cs-block">
+          <p class="cs-label">05 — Accessibility, Usability &amp; Interaction Details</p>
+          <h3 class="cs-heading">Luxury aesthetics and accessibility are not in conflict</h3>
+          <p class="cs-body">There's a persistent assumption in luxury digital design that accessibility compromises
+            aesthetics — that high contrast ratios are visually loud, that alt text is unnecessary for 'obvious' product
+            imagery, that keyboard navigation ruins a curated experience. This project was an opportunity to prove that
+            assumption wrong. Every design decision was tested against both the brand's visual standards and WCAG AA
+            requirements, and in every case, the accessible version was either visually identical or actively better.
+          </p>
+          <p class="cs-body">Typography was the most significant usability challenge. The brand's serif display typeface
+            was visually stunning at large sizes but degraded in legibility below 14px, particularly on mobile screens.
+            Rather than abandoning the serif or accepting poor readability, I created a hybrid typographic system where
+            the serif was reserved for editorial headlines and category names (always above 18px), while the sans-serif
+            carried all informational content — product details, pricing, descriptions. This split actually strengthened
+            the brand hierarchy by creating a clear visual distinction between 'brand voice' and 'product information,'
+            and it ensured legibility across all screen sizes and pixel densities.</p>
+          <p class="cs-body">Motion design was used to reinforce the brand's sense of considered luxury. Product image
+            transitions used a slow 500ms ease-in-out rather than the typical 300ms web standard — a deliberate choice
+            that communicated weight and value. Hover states on product cards used a subtle 2% scale-up with an opacity
+            shift in the overlay, revealing additional product details without the visual loudness of a quick-snap
+            animation. The product gallery implemented a smooth, physics-based swipe with gentle deceleration, mimicking
+            the tactile experience of handling a physical product catalog. All motion was gated behind a
+            prefers-reduced-motion media query, with graceful static fallbacks that maintained the brand experience for
+            users who disabled animations.</p>
+
+          <div class="key-takeaway">
+            <p class="key-takeaway-label">Key Takeaway</p>
+            <p>Accessibility in luxury design isn't a compromise — it's a design constraint that forces better
+              typographic decisions, clearer hierarchy, and more intentional motion design.</p>
+          </div>
+        </div>
+
+        <!-- 06 — Outcome -->
+        <div class="cs-block">
+          <p class="cs-label">06 — Outcome</p>
+          <h3 class="cs-heading">A brand presence that earns trust before the product does</h3>
+          <p class="cs-body">The delivered Webflow site gave the brand a digital presence consistent with its physical
+            retail experience. The category restructuring reduced navigation depth for common purchase journeys and
+            created a browsing experience that encouraged exploration rather than just search.</p>
+        </div>
+      </div>
+
+      <!-- ═══════════════════════════════════════════════
+           CASE STUDY 4 — ANAYA STEEL
+           ═══════════════════════════════════════════════ -->
+      <div class="case-study animate-section" id="case-anaya">
+        <h2 class="case-study-title">Anaya Steel — Utility as Design Philosophy</h2>
+        <div class="overview-strip">
+          <div>
+            <div class="overview-item-label">Duration</div>
+            <div class="overview-item-value">6 weeks</div>
+          </div>
+          <div>
+            <div class="overview-item-label">Role</div>
+            <div class="overview-item-value">UX Research, Web Design, Webflow</div>
+          </div>
+          <div>
+            <div class="overview-item-label">Client</div>
+            <div class="overview-item-value">Alchemy Technologies × Anaya Steel</div>
+          </div>
+        </div>
+
+        <!-- UX Competency Tags -->
+        <div class="competency-strip">
+          <span class="competency-strip-label">UX Competencies Demonstrated</span>
+          <span class="competency-tag"><span class="tag-dot"></span>User Research</span>
+          <span class="competency-tag"><span class="tag-dot"></span>Wireframes</span>
+          <span class="competency-tag"><span class="tag-dot"></span>Interaction Thinking</span>
+          <span class="competency-tag"><span class="tag-dot"></span>Problem Solving</span>
+          <span class="competency-tag"><span class="tag-dot"></span>Prototyping</span>
+          <span class="competency-tag"><span class="tag-dot"></span>Accessibility / Usability</span>
+          <span class="competency-tag"><span class="tag-dot"></span>Motion / Micro-interactions</span>
+        </div>
+
+        <!-- 01 — The Problem -->
+        <div class="cs-block">
+          <p class="cs-label">01 — The Problem</p>
+          <h3 class="cs-heading">When usability is the only metric that matters</h3>
+          <p class="cs-body">Industrial procurement is a high-stakes, low-patience context. A procurement manager
+            searching for steel specifications doesn't want beautiful — they want fast, accurate, and trustworthy. The
+            existing site buried product information inside a visual design that prioritized appearance over function.
+            The redesign had one job: get the right information in front of the right person in the fewest possible
+            clicks.</p>
+        </div>
+
+        <!-- 02 — Research & Discovery -->
+        <div class="cs-block">
+          <p class="cs-label">02 — Research &amp; Discovery</p>
+          <h3 class="cs-heading">Sitting with the actual user context</h3>
+          <p class="cs-body">User research for B2B industrial contexts requires understanding workflows, not just
+            preferences. Discovery sessions revealed that procurement managers typically arrived at the site mid-task —
+            comparing specifications across three or four suppliers simultaneously. The site needed to work as a
+            reference document as much as a brand platform.</p>
+          <p class="cs-body">Key insight: the inquiry form was being abandoned at high rates not because of friction in
+            the form itself — but because users couldn't find the specific grade/spec they needed before reaching it, so
+            they left to find a supplier who made it easier.</p>
+
+          <div class="methods-list">
+            <div class="method-item"><span class="method-marker"></span>Workflow observation of procurement task flows
+            </div>
+            <div class="method-item"><span class="method-marker"></span>Form analytics — drop-off point analysis</div>
+            <div class="method-item"><span class="method-marker"></span>Heuristic evaluation of existing site IA</div>
+            <div class="method-item"><span class="method-marker"></span>Competitor comparison across 4 steel suppliers
+            </div>
+          </div>
+        </div>
+
+        <!-- 03 — Design Decisions -->
+        <div class="cs-block">
+          <p class="cs-label">03 — Design Decisions</p>
+          <h3 class="cs-heading">Information architecture before visual design</h3>
+          <p class="cs-body">The IA was the project. Before a single visual decision was made, the entire product
+            catalog was restructured with the procurement manager's task flow as the organizing principle: material type
+            → grade → specification → inquiry.</p>
+          <p class="cs-body">Search was elevated to a primary interaction — not buried in the navigation. Product
+            specification sheets were redesigned to match the format procurement teams actually use in their own
+            documentation, reducing translation friction between the site and their internal workflows.</p>
+          <p class="cs-body">Visual design was deliberately quiet — it existed to support the information, not compete
+            with it.</p>
+
+          <div class="wireframe-placeholder" style="height: 260px;">
+            <span>[IA diagram + product page wireframes — replace with actual]</span>
+          </div>
+        </div>
+
+        <!-- 04 — Wireframes & Prototyping -->
+        <div class="cs-block">
+          <p class="cs-label">04 — Wireframes &amp; Prototyping</p>
+          <h3 class="cs-heading">Prototyping task flows, not pages</h3>
+          <p class="cs-body">The wireframing approach for Anaya Steel was task-flow-first rather than page-first.
+            Instead of designing individual pages and then connecting them, I mapped the procurement manager's actual
+            task flow — 'I need 304-grade stainless steel sheet, 2mm thickness, for a specific quantity, and I need to
+            send an inquiry with those exact specs' — and wireframed the entire journey as a single connected
+            experience. Each wireframe was a step in the task, not a standalone page design. This approach revealed that
+            the optimal path from landing to inquiry was four steps, not the seven that the existing site required.</p>
+          <p class="cs-body">The search and filter system was the component that received the most prototyping
+            attention. I built three prototype variations: a traditional faceted filter sidebar, a dynamic search with
+            auto-suggest and specification previews, and a hybrid approach combining both. Testing with internal
+            stakeholders acting as procurement managers showed that the hybrid approach was most effective — the search
+            handled users who knew exactly what they wanted, while the faceted filter supported comparison-oriented
+            browsing. The prototype also tested the specification sheet layout by presenting the same product data in
+            three formats: the industry-standard table format that procurement teams use in their own spreadsheets, a
+            card-based layout, and a comparison view. The table format won decisively — users could copy data directly
+            from the site into their own procurement documents without reformatting.</p>
+          <p class="cs-body">Low-fidelity prototypes were tested within one week of project start, which was critical
+            for a six-week timeline. By validating the IA and search behavior early, the visual design phase could focus
+            entirely on visual clarity and information density — optimizing how much specification data could be
+            displayed without creating cognitive overload. The rapid prototyping cadence also built client confidence in
+            the design direction, reducing feedback cycles later in the project.</p>
+
+          <div class="wireframe-placeholder" style="height: 260px;">
+            <span>[Task flow map → search prototype variations → spec sheet layouts — replace with actual]</span>
+          </div>
+        </div>
+
+        <!-- 05 — Accessibility, Usability & Interaction Details -->
+        <div class="cs-block">
+          <p class="cs-label">05 — Accessibility, Usability &amp; Interaction Details</p>
+          <h3 class="cs-heading">When the user's job is urgent, every interaction must respect their time</h3>
+          <p class="cs-body">Usability for industrial procurement has constraints that consumer product design rarely
+            encounters. Procurement managers often access supplier sites from older hardware with smaller screens,
+            sometimes in warehouse environments with poor lighting. I designed the specification tables using a minimum
+            14px body text with high contrast ratios (exceeding WCAG AAA, not just AA), and ensured that all critical
+            product data — grade, dimension, certification — was visible without horizontal scrolling on a 1366×768
+            resolution, which analytics showed was the most common viewport among existing site visitors.</p>
+          <p class="cs-body">The inquiry form was redesigned based on the drop-off analysis. The original form asked for
+            seventeen fields upfront. The redesigned form used progressive disclosure — three essential fields on the
+            first screen (product, grade, quantity), with additional specifications expandable on request. The form
+            pre-populated product information based on the specification page the user navigated from, eliminating
+            redundant data entry. Error validation was inline and immediate, with error messages written in procurement
+            language ('Please specify the grade — e.g. SS304, SS316') rather than generic form language ('This field is
+            required'). These changes alone addressed the core abandonment issue identified in research.</p>
+          <p class="cs-body">Interaction design on this project was defined by restraint. Motion was limited to
+            functional feedback — filter state changes used a 200ms transition to confirm that the user's selection
+            registered, search results appeared with a quick 150ms fade to prevent the jarring flash of
+            empty-then-populated content, and form validation provided immediate inline feedback without page scrolling.
+            No decorative animation existed anywhere on the site. The interaction philosophy was explicitly utilitarian:
+            every animation had to answer the question 'does this help the user complete their task faster?' If the
+            answer was no, it was removed. This discipline produced what I consider one of the cleanest interaction
+            designs I've built — not because it was minimal by aesthetic choice, but because it was minimal by
+            functional necessity.</p>
+
+          <div class="key-takeaway">
+            <p class="key-takeaway-label">Key Takeaway</p>
+            <p>The best interaction design for utility-first products is the design that makes itself invisible. Every
+              micro-interaction should serve the task, not the designer's portfolio.</p>
+          </div>
+        </div>
+
+        <!-- 06 — Outcome -->
+        <div class="cs-block">
+          <p class="cs-label">06 — Outcome</p>
+          <h3 class="cs-heading">Design that gets out of the way</h3>
+          <p class="cs-body">The restructured information architecture reduced the path to specification finding. The
+            elevated search and filter system gave procurement managers control over their own discovery process. The
+            project reinforced something important: sometimes the best UX decision is the one that makes the designer
+            invisible.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       SECTION 4 — ABOUT
+       ════════════════════════════════════ -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-grid animate-section">
+        <div class="about-visual">
+          <div class="about-shapes">
+            <img src="./resources/about.jpg" alt="Karunya Devaki" />
+          </div>
+          <p class="about-location">Bangalore, India 🇮🇳</p>
+        </div>
+        <div class="about-text">
+          <p class="section-label">About</p>
+          <h2 class="about-heading">A designer who<br>started with data.</h2>
+
+          <p>I studied Data Science before I studied design — and that sequence matters to how I work. I learned to ask
+            'why' before 'what', to look for patterns before proposing solutions, and to be skeptical of assumptions
+            that haven't been tested. When I moved into UX, those habits came with me.</p>
+
+          <p>I've spent the past year designing live products at Alchemy Technology in Bangalore — websites and web apps
+            across industries from robotics to luxury retail. Every project has taught me something different: that good
+            B2B UX is really just good information architecture; that bilingual design requires cultural humility, not
+            just CSS; that the best thing a designer can do for a client is make the handoff completely unnecessary.</p>
+
+          <p>Outside of client work, I'm interested in interaction design, design systems, and the question of how
+            emerging AI tools change the designer's role — without removing the need for human judgment at the center of
+            the process.</p>
+
+          <hr class="about-divider" />
+
+          <p class="tools-label">Currently Using</p>
+          <div class="tool-badges">
+            <span class="tool-badge">Figma</span>
+            <span class="tool-badge">Webflow</span>
+            <span class="tool-badge">Adobe Illustrator</span>
+            <span class="tool-badge">Midjourney</span>
+            <span class="tool-badge">Uizard</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       SECTION 5 — CONTACT
+       ════════════════════════════════════ -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-inner animate-section">
+        <p class="section-label">Contact</p>
+        <h2 class="contact-heading">Let's talk<br>about design.</h2>
+        <p class="contact-body">I'm always open to conversations about design, collaboration, or feedback on my work. If
+          you're working on something interesting — or just want to exchange ideas — reach out.</p>
+
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+            </div>
+            <a href="mailto:karunyadevaki@gmail.com">karunyadevaki@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </div>
+            <a href="https://linkedin.com/in/karunya-devaki" target="_blank"
+              rel="noopener noreferrer">linkedin.com/in/karunya-devaki</a>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M8 12h8" />
+                <path d="M12 8v8" />
+              </svg>
+            </div>
+            <a href="https://behance.net/KarunyaDevakii" target="_blank"
+              rel="noopener noreferrer">behance.net/KarunyaDevakii</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       FOOTER
+       ════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>© 2026 Karunya Devaki</span>
+      <span>Designed and built with intent.</span>
+    </div>
+  </footer>
+
+  <!-- Modular JavaScript -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

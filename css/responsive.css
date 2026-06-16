@@ -1,0 +1,130 @@
+/* ════════════════════════════════════
+   RESPONSIVE
+   ════════════════════════════════════ */
+@media (max-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .hero-right {
+    align-items: flex-start;
+  }
+
+  .abstract-composition {
+    width: 240px;
+    height: 240px;
+  }
+
+  .abstract-rect-1 {
+    width: 150px;
+    height: 195px;
+    left: 40px;
+  }
+
+  .abstract-rect-2 {
+    width: 135px;
+    height: 165px;
+    left: 60px;
+  }
+
+  .abstract-rect-3 {
+    width: 120px;
+    height: 150px;
+    left: 55px;
+  }
+
+  .case-card {
+    grid-template-columns: 1fr;
+  }
+
+  .case-card:nth-child(even) .case-card-image {
+    order: 0;
+  }
+
+  .case-card:nth-child(even) .case-card-text {
+    order: 0;
+  }
+
+  .case-card-text {
+    padding: 32px 24px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .overview-strip {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .stat-strip {
+    gap: 24px;
+  }
+
+  .work-section .section-heading,
+  .process-section .section-heading,
+  .contact-heading {
+    font-size: 36px;
+  }
+
+  .case-study-title {
+    font-size: 32px;
+  }
+
+  .about-heading {
+    font-size: 32px;
+  }
+
+  .methods-list {
+    grid-template-columns: 1fr;
+  }
+
+  .competency-strip {
+    gap: 6px;
+  }
+
+  .competency-tag {
+    font-size: 11px;
+    padding: 5px 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .mobile-overlay {
+    display: flex;
+  }
+
+  .scroll-indicator {
+    display: none;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+
+  /* Disable hover lift on mobile (touch) */
+  .case-card:hover {
+    transform: none;
+  }
+
+  .contact-item:hover {
+    padding-left: 0;
+  }
+}

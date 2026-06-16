@@ -1,0 +1,13 @@
+/* ════════════════════════════════════
+   CSS VARIABLES
+   ════════════════════════════════════ */
+:root {
+  --background: #F5F2EE;
+  --surface: #EDEAE4;
+  --text-primary: #1C1C1C;
+  --text-secondary: #5C5C5C;
+  --accent: #B5603A;
+  --accent-light: #F0DDD4;
+  --border: #DDD9D3;
+  --white: #FFFFFF;
+}
